@@ -1,0 +1,133 @@
+/* ===========================
+   ABOUT HEADING
+   =========================== */
+
+.about-heading {
+  padding: 210px 0px 130px 0px;
+  text-align: center;
+  background-image: url(../images/about-heading.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-heading .text-content h4 {
+  color: #f33f3f;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-heading .text-content h2 {
+  color: #fff;
+  font-size: 62px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* ===========================
+   ABOUT FEATURES
+   =========================== */
+
+.about-features {
+  margin-top: 100px !important;
+}
+
+.about-features p {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.about-features .container .row {
+  padding-bottom: 0px !important;
+  border-bottom: none !important;
+}
+
+/* ===========================
+   BEST FEATURES
+   =========================== */
+
+.best-features {
+  margin-top: 50px;
+}
+
+.best-features .container .row {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 60px;
+}
+
+.best-features img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.best-features h4 {
+  font-size: 17px;
+  color: #1a6692;
+  margin-bottom: 20px;
+}
+
+.best-features ul.featured-list li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.best-features ul.featured-list li a {
+  font-size: 14px;
+  color: #4a4a4a;
+  font-weight: 300;
+  transition: all 0.3s;
+  position: relative;
+  padding-left: 13px;
+}
+
+.best-features ul.featured-list li a::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  background-color: #4a4a4a;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transition: all 0.3s;
+}
+
+.best-features ul.featured-list li a:hover {
+  color: #f33f3f;
+}
+
+.best-features ul.featured-list li a:hover::before {
+  background-color: #f33f3f;
+}
+
+/* ===========================
+   CALL TO ACTION (if included)
+   =========================== */
+
+.call-to-action .inner-content {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.call-to-action .inner-content h4 {
+  font-size: 17px;
+  color: #1a6692;
+  margin-bottom: 15px;
+}
+
+.call-to-action .inner-content em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.call-to-action .inner-content .col-md-4 {
+  text-align: right;
+}
+
+.call-to-action .inner-content .filled-button {
+  margin-top: 12px;
+}

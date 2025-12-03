@@ -1,0 +1,103 @@
+/* ===========================
+   CONTACT PAGE — FORM
+   =========================== */
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  display: inline-block;
+  line-height: 1.4;
+  transition: border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: none;
+  border: 1px solid #f33f3f;
+  outline: none;
+}
+
+/* ===========================
+   CONTACT FORM BUTTON
+   =========================== */
+
+.contact-form button.filled-button {
+  background-color: #f33f3f;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-form button.filled-button:hover {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* ===========================
+   ACCORDION / FAQ SECTION
+   =========================== */
+
+.accordion {
+  margin-left: 30px;
+}
+
+.accordion a {
+  cursor: pointer;
+  font-size: 17px;
+  color: #1a6692 !important;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  display: block;
+}
+
+.accordion a:hover,
+.accordion a.active {
+  color: #f33f3f !important;
+}
+
+.accordion li .content {
+  display: none;
+  margin-top: 10px;
+}
+
+.accordion li:first-child {
+  border-top: 1px solid #eee;
+}
+
+.accordion li {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0px;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 768px) {
+  .send-message .accordion {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button.filled-button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
