@@ -1,0 +1,7 @@
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 10px;
+  margin: 2rem auto;
+}

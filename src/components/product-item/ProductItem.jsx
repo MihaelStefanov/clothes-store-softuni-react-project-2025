@@ -1,4 +1,4 @@
-import './product-item.css'
+import './product-item.css';
 
 export default function ProductItem({
     img,
@@ -7,19 +7,14 @@ export default function ProductItem({
     onAddToCart
 }) {
 
+    const inspectItemHandler = () => {
+        navigate(`/`);
+    }
     return (
-        // <>
-        //     <div className="product-item">
-        //         <img src={img} alt={title} />
-        //         <div className="product-item-title-wrapper">
-        //             <h3>{title}</h3>
-        //             {/* <p>Боти с връзки</p> */}
-        //             <p className="price">{price}</p>
-        //         </div>
-        //     </div>
-        // </>
+
+
         <>
-        <div className="image-wrapper">
+    
             <div className="product-item">
                 <div className="product-item-image-wrapper">
                     <img src={img} alt={title} />
@@ -34,7 +29,6 @@ export default function ProductItem({
                     <h3>{title}</h3>
                     <p className="price">{price}</p>
                 </div>
-            </div>
             </div>
         </>
 

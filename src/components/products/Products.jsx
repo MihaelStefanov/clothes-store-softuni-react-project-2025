@@ -1,3 +1,4 @@
+import ProductItem from "../product-item/ProductItem";
 import "./products.css";
 export default function Products() {
 
@@ -35,39 +36,10 @@ export default function Products() {
                             <div className="filters-content">
                                 <div className="row grid">
                                     <div className="col-lg-4 col-md-4 all des">
-                                        <div className="product-item">
-                                            <a href="#">
-                                                <img src="assets/images/product_01.jpg" alt="" />
-                                            </a>
-                                            <div className="down-content">
-                                                <a href="#">
-                                                    <h4>Tittle goes here</h4>
-                                                </a>
-                                                <h6>$18.25</h6>
-                                                <p>
-                                                    Lorem ipsume dolor sit amet, adipisicing elite. Itaque,
-                                                    corporis nulla aspernatur.
-                                                </p>
-                                                <ul className="stars">
-                                                    <li>
-                                                        <i className="fa fa-star" />
-                                                    </li>
-                                                    <li>
-                                                        <i className="fa fa-star" />
-                                                    </li>
-                                                    <li>
-                                                        <i className="fa fa-star" />
-                                                    </li>
-                                                    <li>
-                                                        <i className="fa fa-star" />
-                                                    </li>
-                                                    <li>
-                                                        <i className="fa fa-star" />
-                                                    </li>
-                                                </ul>
-                                                <span>Reviews (12)</span>
-                                            </div>
-                                        </div>
+                                        <ProductItem img={'https://cdn.aboutstatic.com/file/images/bbc12ef63793ba68a2928f01004ae39b.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960'}
+                                            title={"Ботуши"}
+                                            price={`${330.25}$`}
+                                            onAddToCart={() => console.log('Добавено в кошницата')} />
                                     </div>
                                     <div className="col-lg-4 col-md-4 all dev">
                                         <div className="product-item">

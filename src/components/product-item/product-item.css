@@ -1,15 +1,19 @@
 /* ===========================
-   PRODUCT ITEM WRAPPER
+   ITEM WRAPPER
    =========================== */
 
 .product-item {
+  width: 100%;
+  background: #fff;
   border: 1px solid #eee;
-  margin-bottom: 30px;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
-  background-color: #fff;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+    width: 300px;           /* еднакви кутии */
+
 }
 
 .product-item:hover {
@@ -17,18 +21,28 @@
 }
 
 /* ===========================
-   PRODUCT IMAGE
+   IMAGE AREA – FIXED SIZE
    =========================== */
 
-.product-item img {
+.product-item-image-wrapper {
   width: 100%;
-  display: block;
-  padding: 2.5em;
+  height: 250px;        /* ❗ ФИКСИРАНА ВИСОЧИНА */
   background-color: #F4F4F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-item-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* ❗ СНИМКАТА НЕ РАЗДУВА КУТИЯТА */
   transition: transform 0.3s ease;
 }
 
-.product-item:hover img {
+.product-item:hover .product-item-image-wrapper img {
   transform: scale(1.05);
 }
 
@@ -45,19 +59,17 @@
   color: #fff;
   border: none;
   padding: 12px 24px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
   opacity: 0;
   transition: all 0.3s ease;
+  z-index: 5;
   white-space: nowrap;
-  border-radius: 5px;
-  z-index: 10;
 }
 
 .product-item:hover .add-to-cart-btn {
-  transform: translateX(-50%) translateY(0);
   opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .add-to-cart-btn:hover {
@@ -65,74 +77,32 @@
 }
 
 /* ===========================
-   PRODUCT CONTENT
+   TEXT CONTENT
    =========================== */
 
 .product-item-title-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4em;
   padding: 1em;
-}
-
-.product-item .down-content {
-  padding: 30px;
-  position: relative;
   text-align: center;
 }
 
-.product-item .down-content h4 {
-  font-size: 17px;
-  color: #1a6692;
-  margin-bottom: 20px;
-}
-
-.product-item .down-content h6 {
-  position: absolute;
-  top: 30px;
-  right: 30px;
+.product-item-title-wrapper h3 {
+  margin: 0;
   font-size: 18px;
-  color: #121212;
+  font-weight: 600;
 }
 
-.product-item .down-content p {
-  margin-bottom: 20px;
-}
-
-.product-item .down-content ul li {
-  display: inline-block;
-}
-
-.product-item .down-content ul li i {
-  color: #f33f3f;
-  font-size: 14px;
-}
-
-.product-item .down-content span {
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  font-size: 13px;
-  color: #f33f3f;
-  font-weight: 500;
+.price {
+  font-size: 15px;
+  color: #666;
+  margin-top: 8px;
 }
 
 /* ===========================
    RESPONSIVE
    =========================== */
 
-@media (max-width: 992px) {
-  .product-item .down-content h4 {
-    margin-bottom: 10px;
-  }
-
-  .product-item .down-content h6,
-  .product-item .down-content span {
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 10px;
+@media (max-width: 768px) {
+  .product-item-image-wrapper {
+    height: 200px;
   }
 }

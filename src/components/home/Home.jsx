@@ -1,12 +1,12 @@
 import "./home.css";
 import ProductItem from "../product-item/ProductItem";
+import { Link } from "react-router";
 
 export default function Home() {
 
     return (
         <>
-
-            {/* <div className="page-heading products-heading header-text">
+            <div className="page-heading products-heading header-text">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -17,7 +17,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
+
 
             {/* <div className="banner header-text">
                 <div className="owl-banner owl-carousel">
@@ -48,169 +49,45 @@ export default function Home() {
                         <div className="col-md-12">
                             <div className="section-heading">
                                 <h2>Latest Products</h2>
-                                <a href="products.html">
+                                <Link to="/products">
                                     view all products <i className="fa fa-angle-right" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <section className="products-wrapper">
                             <ProductItem img={'https://cdn.aboutstatic.com/file/images/bbc12ef63793ba68a2928f01004ae39b.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960'}
-                            title={"Ботуши"}
-                            price={`${330.25}$`}
-                            onAddToCart={() => console.log('Добавено в кошницата')}/>
-                        </div>
-                        <div className="col-md-4">
+                                title={"Ботуши"}
+                                price={`${330.25}$`}
+                                onAddToCart={() => console.log('Добавено в кошницата')} />
                             <ProductItem
-                                img="path/to/image.jpg"
+                                img="https://cdn.aboutstatic.com/file/images/ed2e2a83cf564ed4d3375bfe9f628a23.png?bg=F4F4F5&quality=75&trim=1&height=1067&width=800"
                                 title="Продукт"
-                                price="50 лв"
+                                price="20 лв"
                                 onAddToCart={() => console.log('Добавено в кошницата')}
                             />
-                        </div>
-                        <div className="col-md-4">
-                            <div className="product-item">
-                                <a href="#">
-                                    <img src="assets/images/product_03.jpg" alt="" />
-                                </a>
-                                <div className="down-content">
-                                    <a href="#">
-                                        <h4>Tittle goes here</h4>
-                                    </a>
-                                    <h6>$20.45</h6>
-                                    <p>
-                                        Sixteen Clothing is free CSS template provided by TemplateMo.
-                                    </p>
-                                    <ul className="stars">
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                    </ul>
-                                    <span>Reviews (36)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="product-item">
-                                <a href="#">
-                                    <img src="assets/images/product_04.jpg" alt="" />
-                                </a>
-                                <div className="down-content">
-                                    <a href="#">
-                                        <h4>Tittle goes here</h4>
-                                    </a>
-                                    <h6>$15.25</h6>
-                                    <p>
-                                        Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis
-                                        nulla aspernatur.
-                                    </p>
-                                    <ul className="stars">
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                    </ul>
-                                    <span>Reviews (48)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="product-item">
-                                <a href="#">
-                                    <img src="assets/images/product_05.jpg" alt="" />
-                                </a>
-                                <div className="down-content">
-                                    <a href="#">
-                                        <h4>Tittle goes here</h4>
-                                    </a>
-                                    <h6>$12.50</h6>
-                                    <p>
-                                        Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis
-                                        nulla aspernatur.
-                                    </p>
-                                    <ul className="stars">
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                    </ul>
-                                    <span>Reviews (16)</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="product-item">
-                                <a href="#">
-                                    <img src="assets/images/product_06.jpg" alt="" />
-                                </a>
-                                <div className="down-content">
-                                    <a href="#">
-                                        <h4>Tittle goes here</h4>
-                                    </a>
-                                    <h6>$22.50</h6>
-                                    <p>
-                                        Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis
-                                        nulla aspernatur.
-                                    </p>
-                                    <ul className="stars">
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                        <li>
-                                            <i className="fa fa-star" />
-                                        </li>
-                                    </ul>
-                                    <span>Reviews (32)</span>
-                                </div>
-                            </div>
-                        </div>
+                            <ProductItem img={'https://cdn.aboutstatic.com/file/images/ca5c2fecb92e016186c369777874794d.jpg?brightness=0.96&quality=75&trim=1&height=1067&width=800'}
+                                title={"Ботуши"}
+                                price={`${330.25}$`}
+                                onAddToCart={() => console.log('Добавено в кошницата')} />
+                            <ProductItem img={'https://cdn.aboutstatic.com/file/images/bbc12ef63793ba68a2928f01004ae39b.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960'}
+                                title={"Ботуши"}
+                                price={`${330.25}$`}
+                                onAddToCart={() => console.log('Добавено в кошницата')} />
+                            <ProductItem img={'https://cdn.aboutstatic.com/file/images/bbc12ef63793ba68a2928f01004ae39b.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960'}
+                                title={"Ботуши"}
+                                price={`${330.25}$`}
+                                onAddToCart={() => console.log('Добавено в кошницата')} />
+                            <ProductItem img={'https://cdn.aboutstatic.com/file/images/bbc12ef63793ba68a2928f01004ae39b.png?bg=F4F4F5&quality=75&trim=1&height=1280&width=960'}
+                                title={"Ботуши"}
+                                price={`${330.25}$`}
+                                onAddToCart={() => console.log('Добавено в кошницата')} />
+                        </section>
                     </div>
+
                 </div>
             </div>
 
-            <div className="best-features">
+            {/* <div className="best-features">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
@@ -292,7 +169,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

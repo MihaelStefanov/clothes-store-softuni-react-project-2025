@@ -107,7 +107,7 @@ a.filled-button:hover {
 .contact-heading {
 	background-image: url(../images/contact-heading.jpg);
 }
-
+/* 
 .page-heading {
 	padding: 210px 0px 130px 0px;
 	text-align: center;
@@ -178,7 +178,7 @@ a.filled-button:hover {
 #preloader .jumper>div:nth-child(3) {
 	-webkit-animation-delay: 0.66666s;
 	animation-delay: 0.66666s;
-}
+} */
 
 @-webkit-keyframes jumper {
 	0% {

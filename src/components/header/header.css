@@ -67,6 +67,12 @@ header .navbar {
   border-bottom: 3px solid #f33f3f;
 }
 
+.add-item {
+  color: red;
+}
+
+
+
 /* ===========================
    DROPDOWN MENU
    =========================== */

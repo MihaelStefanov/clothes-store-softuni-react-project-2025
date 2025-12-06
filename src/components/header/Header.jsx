@@ -38,6 +38,12 @@ export default function Header() {
                             <li className="nav-item">
                                 <Link to="/contact" className="nav-link">Contact Us</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/registration" className="nav-link">Registration</Link>
+                            </li>
+                            <li className="nav-item add-item">
+                                <Link to="/add-item" className="nav-link">Add Item</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
