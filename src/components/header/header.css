@@ -9,7 +9,9 @@ header {
   height: 80px;
   background-color: #232323; /* тъмен фон */
   transition: all 0.3s ease-in-out;
+  margin-bottom: 5em;
 }
+
 
 header .navbar {
   padding: 17px 0;

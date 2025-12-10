@@ -1,7 +1,9 @@
 /* ===========================
    HOME PAGE — MAIN HERO BANNER
    =========================== */
-
+body {
+    padding-top: 220px; 
+}
 .products-wrapper {
     display: flex;
     flex-direction: row;

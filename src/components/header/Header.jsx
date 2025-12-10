@@ -44,6 +44,9 @@ export default function Header() {
                             <li className="nav-item add-item">
                                 <Link to="/add-item" className="nav-link">Add Item</Link>
                             </li>
+                                <li className="nav-item add-item">
+                                <Link to="/users" className="nav-link">Users List</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
